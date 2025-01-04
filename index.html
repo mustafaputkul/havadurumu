@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Hava Durumu ve Günlük Tahmin</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sol Bilgi -->
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+            <div class="today-info">
+                <h2 id="day-name">...</h2>
+                <span id="date">...</span>
+                <div>
+                    <i class='bx bx-current-location'></i>
+                    <span id="location">...</span>
+                </div>
+            </div>
+            <div class="today-weather">
+                <img id="weather-icon" class="weather-icon" alt="Weather Icon" />
+                <h1 id="temperature" class="weather-temp">...</h1>
+                <h3 id="weather-description">...</h3>
+            </div>
+        </div>
+
+        <!-- Sağ Bilgi -->
+        <div class="right-info">
+            <!-- Günlük Bilgiler -->
+            <div class="day-info">
+                <div>
+                    <span class="title">Yağış Oranı</span>
+                    <span class="value" id="precipitation">...</span>
+                </div>
+                <div>
+                    <span class="title">Nem Oranı</span>
+                    <span class="value" id="humidity">...</span>
+                </div>
+                <div>
+                    <span class="title">Rüzgar Hızı</span>
+                    <span class="value" id="wind-speed">...</span>
+                </div>
+                <div>
+                    <span class="title">Hava Kalitesi</span>
+                    <span class="value" id="air-quality">...</span>
+                </div>
+
+
+            <!-- Haftalık Tahmin -->
+            <ul id="forecast-list" class="days-list">
+                <!-- Haftalık tahminler buraya eklenecek -->
+            </ul>
+
+            <!-- Şehir Arama -->
+            <div class="btn-container">
+                <input type="text" class="search-input" id="city-input" placeholder="Şehir adı giriniz...">
+                <button class="loc-button" id="search-location">Bul</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
