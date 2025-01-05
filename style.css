@@ -205,3 +205,152 @@ body {
     background: #fff;
     color: #222831;
 }
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1e1e1f;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+        padding: 15px;
+        gap: 10px; /* Elemanlar arasında boşluk */
+        min-height: 100vh; /* Tüm ekranın yüksekliğini kapla */
+    }
+
+    .right-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .left-info {
+        display: flex;
+        flex-direction: column; /* Elemanları dikey hizala */
+        align-items: center; /* Yatayda sola hizala */
+        justify-content: flex-start; /* Dikeyde üste hizala */
+        width: 100%;
+        text-align: left;
+        margin-bottom: 15px;
+        gap: 8px; /* Elemanlar arasında boşluk */
+    }
+    
+    .pic-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .today-info {
+        display: flex;
+        flex-direction: column; /* Bilgiler üst üste gelsin */
+        align-items: center; /* Yatayda ortaya hizala */
+        justify-content: flex-start; /* Dikeyde üste hizala */
+        gap: 5px; /* Elemanlar arası boşluk */
+        position: relative; /* Kendine özgü bir konumlandırma sağlar */
+        z-index: 1; /* pic-gradient'in altında kalmasını engeller */
+    }
+    
+    .today-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Yatayda ortaya hizala */
+        justify-content: flex-end; /* Dikeyde en alta hizala */
+        gap: 5px; /* İkon ve sıcaklık arasında daha küçük boşluk */
+        height: 100%; /* Tam yükseklik */
+    }
+    
+    .weather-icon {
+        width: 80px; /* İkon boyutu */
+        height: 80px; /* Kare boyut ayarı */
+        display: flex; /* Flexbox etkinleştir */
+        align-items: center; /* Yatayda ortaya hizala */
+        justify-content: center; /* Dikeyde ortaya hizala */
+    }
+    
+    .today-weather .bx {
+        font-size: 1rem; /* İkon boyutunu küçült */
+        display: flex; /* Flexbox etkinleştir */
+        align-items: center; /* Yatayda ortaya hizala */
+        justify-content: center; /* Dikeyde ortaya hizala */
+    }
+    
+    .weather-temp {
+        font-size: 1rem; /* Sıcaklık yazı boyutu */
+        margin: 0; /* Varsayılan boşluğu kaldır */
+        display: flex; /* Flexbox etkinleştir */
+        align-items: center; /* Yatayda ortaya hizala */
+        justify-content: center; /* Dikeyde ortaya hizala */
+    }
+    
+
+    .day-info {
+        width: 100%;
+        text-align: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Alanlar arasında boşluk */
+    }
+
+    .day-info div {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        font-size: 1rem; /* Yazı boyutlarını küçült */
+    }
+
+    .days-list {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .days-list li {
+        flex: 1;
+        font-size: 0.9rem;
+        padding: 8px;
+        text-align: center;
+        border-radius: 5px;
+        background: #353536;
+        color: #fff;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .loc-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .today-weather .bx {
+        font-size: 2.5rem; /* Daha küçük ikon boyutu */
+    }
+
+    .weather-temp {
+        font-size: 2rem; /* Daha küçük yazı boyutu */
+    }
+
+    .days-list li {
+        font-size: 0.8rem; /* Daha küçük yazı boyutu */
+    }
+}
