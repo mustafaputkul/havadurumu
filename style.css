@@ -214,8 +214,8 @@ body {
         background-color: #1e1e1f;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
         padding: 15px;
-        gap: 10px; /* Elemanlar arasında boşluk */
-        min-height: 100vh; /* Tüm ekranın yüksekliğini kapla */
+        gap: 10px;
+        min-height: 100vh;
     }
 
     .right-info {
@@ -228,13 +228,13 @@ body {
 
     .left-info {
         display: flex;
-        flex-direction: column; /* Elemanları dikey hizala */
-        align-items: center; /* Yatayda sola hizala */
-        justify-content: flex-start; /* Dikeyde üste hizala */
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         width: 100%;
         text-align: left;
         margin-bottom: 15px;
-        gap: 8px; /* Elemanlar arasında boşluk */
+        gap: 8px;
     }
     
     .pic-gradient {
@@ -247,44 +247,44 @@ body {
 
     .today-info {
         display: flex;
-        flex-direction: column; /* Bilgiler üst üste gelsin */
-        align-items: center; /* Yatayda ortaya hizala */
-        justify-content: flex-start; /* Dikeyde üste hizala */
-        gap: 5px; /* Elemanlar arası boşluk */
-        position: relative; /* Kendine özgü bir konumlandırma sağlar */
-        z-index: 1; /* pic-gradient'in altında kalmasını engeller */
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        position: relative;
+        z-index: 1;
     }
     
     .today-weather {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Yatayda ortaya hizala */
-        justify-content: flex-end; /* Dikeyde en alta hizala */
-        gap: 5px; /* İkon ve sıcaklık arasında daha küçük boşluk */
-        height: 100%; /* Tam yükseklik */
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+        height: 100%;
     }
     
     .weather-icon {
-        width: 80px; /* İkon boyutu */
-        height: 80px; /* Kare boyut ayarı */
-        display: flex; /* Flexbox etkinleştir */
-        align-items: center; /* Yatayda ortaya hizala */
-        justify-content: center; /* Dikeyde ortaya hizala */
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .today-weather .bx {
-        font-size: 1rem; /* İkon boyutunu küçült */
-        display: flex; /* Flexbox etkinleştir */
-        align-items: center; /* Yatayda ortaya hizala */
-        justify-content: center; /* Dikeyde ortaya hizala */
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .weather-temp {
-        font-size: 1rem; /* Sıcaklık yazı boyutu */
-        margin: 0; /* Varsayılan boşluğu kaldır */
-        display: flex; /* Flexbox etkinleştir */
-        align-items: center; /* Yatayda ortaya hizala */
-        justify-content: center; /* Dikeyde ortaya hizala */
+        font-size: 1rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
 
@@ -293,14 +293,14 @@ body {
         text-align: stretch;
         display: flex;
         flex-direction: column;
-        gap: 10px; /* Alanlar arasında boşluk */
+        gap: 10px;
     }
 
     .day-info div {
         display: flex;
         justify-content: space-between;
         padding: 5px 10px;
-        font-size: 1rem; /* Yazı boyutlarını küçült */
+        font-size: 1rem;
     }
 
     .days-list {
@@ -343,14 +343,14 @@ body {
 
 @media (max-width: 580px) {
     .today-weather .bx {
-        font-size: 2.5rem; /* Daha küçük ikon boyutu */
+        font-size: 2.5rem;
     }
 
     .weather-temp {
-        font-size: 2rem; /* Daha küçük yazı boyutu */
+        font-size: 2rem;
     }
 
     .days-list li {
-        font-size: 0.8rem; /* Daha küçük yazı boyutu */
+        font-size: 0.8rem;
     }
 }
