@@ -4,7 +4,7 @@ Bu proje, OpenWeatherMap API'si kullanarak hava durumu verilerini çekip kullan�
 
 ## Özellikler
 - Şehir seçimi yaparak hava durumu görüntüleme
-- Sıcaklık, nem, yağış oranı ve rüzgar hızı verileri
+- Sıcaklık, nem, yağış oranı, rüzgar hızı ve hava kalitesi verileri
 - Güncel hava durumu ve 5 günlük tahmin
 - Anlık hava durumu için görsel simgeler (Güneş, Bulut, Yağmur, vb.)
 
